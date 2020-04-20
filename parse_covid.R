@@ -42,7 +42,7 @@ geoYandex<-function(location)
   location <- gsub(",", "", location)
   location <- gsub(" ", "+", location)
   posturl <- paste(location)
-  url_string <- paste("https://geocode-maps.yandex.ru/1.x/?lang=ru_RU&apikey=10625dd7-ff33-40c8-acce-227be6bb9aee&geocode=...",
+  url_string <- paste("https://geocode-maps.yandex.ru/1.x/?lang=ru_RU&apikey=<YOUR_API_KEY_HERE>&geocode=...",
                       posturl, sep = "")
   url_string <- URLencode(url_string)
   xmlText <- paste(readLines(url_string, warn=FALSE), "\n", collapse="")
