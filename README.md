@@ -6,3 +6,6 @@ It parses information about adress and date of the case and than provides coordi
 __Warning!__
 
 You need Yandex.maps API key to scratch coordinates. (Google API is possible, but works worse with Russian language)
+
+
+P.S. credits to @andriy-gazin
