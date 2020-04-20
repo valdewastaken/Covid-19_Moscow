@@ -58,13 +58,7 @@ geoYandex<-function(location)
   return (position)
 }
 
-geocodetest <- geoYandex("г. Москва, Ленинский проспект, 90")
-geocodetest4 <- geoYandex("Ленинский проспект, 90")
-geocodetest2 <- geoYandex("Одинцовский район, пос. Заречье, Весенняя ,  2")
-geocodetest5 <- geoYandex("	д. Рогозино, Лесная ,  6")
 datat$lonlat <- NA
-
-#datat$geocodes <- geoYandex(datat$adress)
 
 for (i in 1:length(datat$adress)) {
   datat$lonlat[i] <- geoYandex(datat$adress[i])
@@ -72,5 +66,6 @@ for (i in 1:length(datat$adress)) {
 }
 
 
-
+#########################################################
+saveRDS(datat)
 write.csv(datat, "covidadress.csv", fileEncoding = "UTF-8")
