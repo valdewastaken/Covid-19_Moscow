@@ -7,5 +7,6 @@ __Warning!__
 
 You need Yandex.maps API key to scratch coordinates. (Google API is possible, but works worse with Russian language)
 
+Also I do not know primary source of data and if it reliable or not!
 
 P.S. credits to @andriy-gazin
